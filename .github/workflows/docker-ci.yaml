@@ -28,8 +28,6 @@ jobs:
     - name: Push Docker image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/docker-next-web:latest
 
-    - name: Run Docker container
-      run: docker run -d -p 4000:80 ${{ secrets.DOCKER_USERNAME }}/docker-next-web:latest
 
     
     
